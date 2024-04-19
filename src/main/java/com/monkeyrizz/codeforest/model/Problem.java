@@ -20,9 +20,6 @@ public class Problem {
         this.authorId = authorId;
     }
 
-    public Problem() {
-    }
-
     public Long getId() {
         return id;
     }
