@@ -20,16 +20,10 @@ public class ProblemService {
     }
 
     public List<Problem> getProblems() {
-        return List.of(
-                new Problem(
-                        "twosum",
-                        "return the two numbers that add up to a sum",
-                        2L
-                )
-        );
+        return repo.findAll();
     }
 
-    public Problem getProblemById(int id) {
-        return repo.findById(id);
+    public Problem getProblemById(Long problemId) {
+        return repo.findById(problemId);
     }
 }

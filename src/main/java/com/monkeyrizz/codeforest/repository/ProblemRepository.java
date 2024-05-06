@@ -8,6 +8,6 @@ import java.util.List;
 
 @Repository
 public interface ProblemRepository extends CrudRepository<Problem, Integer> {
-    Problem findById(Long id);
+    Problem findById(Long problemId);
     List<Problem> findAll();
 }

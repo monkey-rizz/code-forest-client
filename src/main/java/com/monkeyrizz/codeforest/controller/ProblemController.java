@@ -21,15 +21,15 @@ public class ProblemController {
     }
 
     @GetMapping
-    @RequestMapping(path = "list")
+    @RequestMapping(path = "all")
     public List<Problem> getProblems() {
         return problemService.getProblems();
     }
 
     @GetMapping
-    @RequestMapping(path = "{id}")
-    public Problem getProblemById(@PathVariable int id) {
-        return problemService.getProblemById(id);
+    @RequestMapping(path = "{problemId}")
+    public Problem getProblemById(@PathVariable Long problemId) {
+        return problemService.getProblemById(problemId);
     }
 
 
