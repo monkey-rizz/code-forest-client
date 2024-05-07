@@ -21,9 +21,9 @@ public class SolutionController {
     }
 
     @GetMapping
-    @RequestMapping(path="{problemId}")
-    public List<Solution> getSolutionList(@PathVariable Long problemId) {
-        return solutionService.getSolutionList(problemId);
+    @RequestMapping(path="{solutionId}")
+    public Solution getSolutionById(@PathVariable Long solutionId) {
+        return solutionService.getSolutionById(solutionId);
     }
 
 }
